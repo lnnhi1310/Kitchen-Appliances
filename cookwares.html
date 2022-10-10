@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookwares</title>
-    <link rel="stylesheet" href="/Kitchen-Appliances/assets/js/jquery-3.6.1.min.js">
-    <link rel="stylesheet" href="/Kitchen-Appliances/assets/js/bootstrap.min.js">
-    <link rel="stylesheet" href="/Kitchen-Appliances/assets/css/bootstrap.min.css">
+    <script src="/assets/js/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="/assets/js/bootstrap.min.js">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/js/bootstrap.bundle.min.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -17,89 +18,252 @@
     body{
         font-family: 'Montserrat';font-size: 22px;
     }
+    .hv-cus{
+        transition: 0.5s;
+    }
+    .hv-cus:hover{
+        box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.15)!important;
+    }
 </style>
 <body>
-    <div class="container">
-        <div>
-            <h4 style="font-size: 70px ;">Cookingwares</h4>
+ 
+<div class="container pt-3 pb-5" id="main">
+    <div class="row">
+        <div class="col-12 text-center pt-3 pb-5">
+            <h4 class="text-uppercase">cookingwares</h4>
         </div>
-        <div class="row">
-            <div class="col-3">
-                <h4>Filter</h4>
-            </div>
-            <div class="col-9">
-                <div>
-                    <h4>Product lists</h4>
-                    <div class="row img-response">
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpan1.jpg" width="100%"  alt="">
-                            <p>$24.99</p>
+        <div class="col-12">
+            <div class="row">
+                <!-- left -->
+                <div class="col-3">
+                    <h4>Filter</h4> 
+                    <div class="select">
+                       <div class="row">
+                        <div class="col-6">
+                            <input type="checkbox">
+                            <span>Cooking Pans</span>
                         </div>
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpan2.jpg" width="100%"  alt="">
-                            <p>$22.99</p>
+                        <div class="col-6">
+                            <input type="checkbox">
+                            <span>Fring Pans</span>
                         </div>
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpan3.jpeg" width="100%"  alt="">
-                            <p>$26.49</p>
+                        <div class="col-6">
+                            <input type="checkbox">
+                            <span>Cookingware sets</span>
                         </div>
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpan4.jfif" width="100%"  alt="">
-                            <p>$29.99</p>
+                        <div class="col-6">
+                            <input type="checkbox">
+                            <span>Handis</span>
                         </div>
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpan5.jfif" width="100%"  alt="">
-                            <p>$29.99</p>
+                        <div class="col-6">
+                            <input type="checkbox">
+                            <span>Kadais</span>
                         </div>
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpan6.jpeg" width="100%"  alt="">
-                            <p>$29.99</p>
+                        <div class="col-6">
+                            <input type="checkbox">
+                            <span>Grill pans</span>
                         </div>
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpan7.jpg" width="100%"  alt="">
-                            <p>$29.99</p>
+                        <div class="col-6">
+                            <input type="checkbox">
+                            <span>Tawas</span>
                         </div>
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpan8.webp" width="100%"  alt="">
-                            <p>$29.99</p>
+                        <div class="col-6">
+                            <input type="checkbox">
+                            <span>Egg Poachers</span>
                         </div>
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpot1.webp" width="100%"  alt="">
-                            <p>$29.99</p>
+                        <div class="col-6">
+                            <input type="checkbox">
+                            <span>Steamers</span>
                         </div>
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpot2.jpg" width="100%"  alt="">
-                            <p>$29.99</p>
+                        <!--Put more filter-->
                         </div>
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpot3.jfif" width="100%"  alt="">
-                            <p>$29.99</p>
+                    </div>         
+                </div> 
+                <!-- right -->
+                    <div class="col-9">  
+                        <div class="show-list mt-3">
+                            <h4 class="fw-light text-uppercase">Product list</h4>
+                            <div class="row">
+                            <!--Cooking pan 1  -->
+                                <div class="col-4 mb-5">
+                                    <div class="card border-0 hv-cus">
+                                        <div class="img-card">
+                                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="/assets/images/cookingpan1.jpg" class="d-block w-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="/assets/images/cookingpan1.jpg" class="d-block w-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="/assets/images/cookingpan1.jpg" class="d-block w-100" alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="titl-card text-center">
+                                            <h6 class="fw-light">Cooking pan 1</h6>
+                                        </div>
+                                        <div class="price text-center">
+                                            <span>$ 24.99</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            <!--Cooking pan 2  -->
+                                <div class="col-4 mb-5">
+                                    <div class="card border-0 hv-cus">
+                                        <div class="img-card">
+                                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="/assets/images/cookingpan2.jpg" class="d-block w-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="/assets/images/cookingpan2.jpg" class="d-block w-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="/assets/images/cookingpan2.jpg" class="d-block w-100" alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="titl-card text-center">
+                                            <h6 class="fw-light">Cooking pan 2</h6>
+                                        </div>
+                                        <div class="price text-center">
+                                            <span>$ 19.99</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            <!-- Cooking pan 3  -->
+                                <div class="col-4 mb-5">
+                                    <div class="card border-0 hv-cus">
+                                        <div class="img-card">
+                                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="/assets/images/cookingpan3.jpeg" class="d-block w-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="/assets/images/cookingpan3.jpeg" class="d-block w-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="/assets/images/cookingpan3.jpeg" class="d-block w-100" alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="titl-card text-center">
+                                            <h6 class="fw-light">Cooking pan 3</h6>
+                                        </div>
+                                        <div class="price text-center">
+                                            <span>$ 29.99</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            <!-- Cooking pan 4  -->
+                                <div class="col-4 mb-5">
+                                    <div class="card border-0 hv-cus">
+                                        <div class="img-card">
+                                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="/assets/images/cookingpan4.jfif" class="d-block w-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="/assets/images/cookingpan4.jfif" class="d-block w-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="/assets/images/cookingpan4.jfif" class="d-block w-100" alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="titl-card text-center">
+                                            <h6 class="fw-light">Cooking pan 4</h6>
+                                        </div>
+                                        <div class="price text-center">
+                                            <span>$ 28.99</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            <!-- Cooking pan 5  -->
+                                <div class="col-4 mb-5">
+                                    <div class="card border-0 hv-cus">
+                                        <div class="img-card">
+                                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="/assets/images/cookingpan5.jfif" class="d-block w-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="/assets/images/cookingpan5.jfif" class="d-block w-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="/assets/images/cookingpan5.jfif" class="d-block w-100" alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="titl-card text-center">
+                                            <h6 class="fw-light">Cooking pan 5</h6>
+                                        </div>
+                                        <div class="price text-center">
+                                            <span>$ 23.99</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            <!--Add more product here-->
+
+                            </div>
                         </div>
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpot4.jpg" width="100%"  alt="">
-                            <p>$29.99</p>
-                        </div>
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpot5.jpg" width="100%"  alt="">
-                            <p>$29.99</p>
-                        </div>
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpot6.jpg" width="100%"  alt="">
-                            <p>$29.99</p>
-                        </div>
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpot7.jfif" width="100%"  alt="">
-                            <p>$29.99</p>
-                        </div>
-                        <div class="col-3 mb-5">
-                            <img src="/Kitchen-Appliances/assets/images/cookingpot8.jpg" width="100%"  alt="">
-                            <p>$29.99</p>
-                        </div>
-                    </div>
-                </div>
+                    </div> 
+<!-- end right  -->
+        <div class="col-12 text-center">TASHA. All rights reserved</div>
             </div>
         </div>
-        
     </div>
+</div>
 </body>
 </html>
