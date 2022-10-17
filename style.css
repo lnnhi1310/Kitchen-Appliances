@@ -1,0 +1,262 @@
+body
+{
+    margin: 0;
+    padding: 0;
+	width: 100%;
+    font-family: 'DotGothic16', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav
+{
+    position: fixed;
+    background-color: #5B5B5B;
+    align-items: center;
+    justify-content: space-between;
+	display: flex;
+	width: 100%;
+    z-index: 100;
+}
+
+nav ul
+{
+    display: flex;
+    padding-right: 100px;
+}
+
+nav ul li
+{
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 70px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+}
+
+nav ul li a img
+{
+    width: 50px;
+}
+
+h3
+{
+    font-weight: 700;
+    text-align: center;
+    color: #8C5845;
+}
+
+footer h4
+{
+    font-weight: 600;
+    color: #8C5845;
+}
+
+p
+{
+    font-weight: 400;
+}
+
+b
+{
+    font-weight: 600;
+}
+
+a:link, a:visited 
+{
+    color: black;
+}
+
+a:hover 
+{
+    color: #8C5845;
+}
+
+#logo
+{
+    padding-left: 100px;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+.slider
+{
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide
+{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slide input
+{
+    display: none;
+}
+
+.img
+{
+    width: 20%;
+    transition: 2s;
+}
+
+.img img
+{
+    width: 800px;
+    height: 500px;
+}
+
+.manual-btn:not(last-child)
+{
+    margin-right: 40px;
+}
+
+.manual-btn:hover
+{
+    background-color: #5B5B5B;
+}
+
+#radio1:checked ~ .first
+{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first
+{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first
+{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first
+{
+    margin-left: -60%;
+}
+
+.manual-nav
+{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    justify-content: center;
+    display: flex;
+}
+
+.manual-btn
+{
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: pointer;
+    transition: 1s;
+}
+            
+.auto-nav
+{
+    position: absolute;
+    width: 800px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+.auto-nav div
+{
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.auto-nav div:not(:last-child)
+{
+    margin-right: 30px;
+}
+
+#radio1:checked ~ .auto-nav .a-b1
+{
+    background-color: #5B5B5B;
+}
+
+#radio2:checked ~ .auto-nav .a-b2
+{
+    background-color: #5B5B5B;
+}
+
+#radio3:checked ~ .auto-nav .a-b3
+{
+    background-color: #5B5B5B;
+}
+
+#radio4:checked ~ .auto-nav .a-b4
+{
+    background-color: #5B5B5B;
+}
+
+
+.icon
+{
+    width: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+footer
+{
+    background-color: #D9D9D9;
+}
+
+footer .container
+{
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+footer .container .row li 
+{
+    list-style: none;
+}
+
+footer .container .row li a
+{
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px) 
+{
+    #logo 
+    {
+        padding-left: 20px;
+    }
+
+    nav ul li a img
+    {
+        width: 40px;
+    }
+
+    nav ul
+    {
+        padding-right: 20px;
+    }
+
+    nav ul li
+    {
+        list-style: none;
+        padding-top: 10px;
+        padding-left: 40px;
+    }
+}
