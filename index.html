@@ -32,46 +32,27 @@
         <div class="container">
             <div class="row">
                 <h3>Feature collections</h3>
-                <div class="col-6">
-                    <section class="responsive">
-                    <div class="slider">
-                        <div class="slide">
-                            <input type="radio" name="radio-btn" id="radio1">
-                            <input type="radio" name="radio-btn" id="radio2">
-                            <input type="radio" name="radio-btn" id="radio3">
-                            <input type="radio" name="radio-btn" id="radio4">
-
-                            <div class="first img">
-                                <img src="assets/images/banner 1.png" alt="">
-                            </div>
-                            <div class="img">
-                                <img src="assets/images/banner 1.png" alt="">
-                            </div>
-                            <div class="img">
-                                <img src="assets/images/banner 1.png" alt="">
-                            </div>
-                            <div class="img">
-                                <img src="assets/images/banner 1.png" alt="">
-                            </div>
-                            
-                            <div class="auto-nav">
-                                <div class="a-b1"></div>
-                                <div class="a-b2"></div>
-                                <div class="a-b3"></div>
-                                <div class="a-b4"></div>
-                            </div>
-                        </div>
-
-                        <div class="manual-nav">
-                            <label for="radio1" class="manual-btn"></label>
-                            <label for="radio2" class="manual-btn"></label>
-                            <label for="radio3" class="manual-btn"></label>
-                            <label for="radio4" class="manual-btn"></label>
+                <div class="col-7">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="assets/images/banner 1.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/banner 1.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/banner 1.png" class="d-block w-100" alt="...">
+                          </div>
                         </div>
                     </div>
-                    </section>
                 </div>
-                <div class="col-4">
+                <div class="col-5">
                     <h3>Column 2</h3>
                     <p>Lorem ipsum dolor..</p>
                 </div>
@@ -151,15 +132,16 @@
 
 
     <script>
-        var counter = 1;
-        setInterval(function(){
-            document.getElementById('radio' + counter).checked=true;
-            counter++;
-            if(counter >4)
-            {
-                counter = 1;
-            }
-        }, 5000);
+        $('.carousel').carousel({
+            interval: 2000
+        })
+
+        $('#myCarousel').on('slid.bs.carousel', function (e) {
+  $('#myCarousel').carousel('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
+})
+
+$('#myCarousel').carousel('1') // Will start sliding to the slide 1 and returns to the caller
+$('#myCarousel').carousel('2')
     </script>
     </body>
 </html>
