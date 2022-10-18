@@ -11,6 +11,78 @@
         <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"> <!-- font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"/> <!-- icon -->
 	    <link rel="stylesheet" href="style.css">
+        <style>
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: $white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $gray;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+/* demo */
+body {
+  font-family: 'Poppins', sans-serif; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  background-color:#222222;
+}
+        </style>
     </head>
 
     <body>
@@ -22,6 +94,14 @@
                 <li><a href=""><img src="assets/images/nav/nav_0001_Layer-3.png"></a></li>
             </ul>
         </nav>
+
+        <br><br><br>
+        <div class="container">
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                <label for="name" class="form__label">Name</label>
+              </div>
+        </div>
 
         <footer>
             <div class="container">
