@@ -19,7 +19,12 @@
 
             #newsletter
             {
-                background-color: aqua;
+                background-color: #8C5845;
+            }
+
+            #newsletter form
+            {
+                line-height: 40px;
             }
 
             /* product */
@@ -51,6 +56,8 @@
             {
                 font-weight: 600;
             }
+
+
         </style>
     </head>
 
@@ -73,7 +80,6 @@
         <div class="container">
             <div class="row">
                 <h3>Feature collections</h3>
-
                 <div class="col-md-12 col-lg-7">
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -83,10 +89,10 @@
                           </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                              <img src="assets/images/banner 1.png" class="d-block w-100" alt="...">
+                              <img src="assets/images/banner/banner 1.png" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="assets/images/banner 1.png" class="d-block w-100" alt="...">
+                            <img src="assets/images/banner/banner 2.gif" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
                             <img src="assets/images/banner 1.png" class="d-block w-100" alt="...">
@@ -136,10 +142,10 @@
                 </div>
                 <div class="col-sm-6 col-md-3" style="padding-top: 10px;">
                     <section id="product1">
-                        <div class="pro">
-                            <img src="assets/images/cookingpan1.jpg" alt="" class="responsive">
+                        <div class="pro" onclick="window.location.href='detailCookingpan3.html';">
+                            <img src="assets/images/cookingpan3.jpeg" alt="" class="responsive">
                             <div class="des">
-                                <h4>Cooking pan 1</h4>
+                                <h4>Cooking pan 3</h4>
                                 <h5>$50</h5>
                             </div>
                             <a href="#"><span class="material-symbols-outlined">weight</span></a>
@@ -149,10 +155,10 @@
                 </div>
                 <div class="col-sm-6 col-md-3" style="padding-top: 10px;">
                     <section id="product1">
-                        <div class="pro">
-                            <img src="assets/images/cookingpan1.jpg" alt="" class="responsive">
+                        <div class="pro" onclick="window.location.href='detailCookingpan7.html';">
+                            <img src="assets/images/cookingpan7.jpg" alt="" class="responsive">
                             <div class="des">
-                                <h4>Cooking pan 1</h4>
+                                <h4>Cooking pan 7</h4>
                                 <h5>$50</h5>
                             </div>
                             <a href="#"><span class="material-symbols-outlined">weight</span></a>
@@ -162,11 +168,11 @@
                 </div>
                 <div class="col-sm-6 col-md-3" style="padding-top: 10px;">
                     <section id="product1">
-                        <div class="pro">
-                            <img src="assets/images/cookingpan1.jpg" alt="" class="responsive">
+                        <div class="pro" onclick="window.location.href='detailRefridgerator2.html';">
+                            <img src="assets/images/refrigerator2.jpeg" alt="" class="responsive">
                             <div class="des">
-                                <h4>Cooking pan 1</h4>
-                                <h5>$50</h5>
+                                <h4>Refrigerator 2</h4>
+                                <h5>$450</h5>
                             </div>
                             <a href="#"><span class="material-symbols-outlined">weight</span></a>
                             <br>
@@ -178,14 +184,59 @@
         
         <br><br><br>
         <section id="newsletter">
-            <h1>Sign up email for update newsletter</h1>
+            <div class="container">
+                <div class="row" style="padding-top: 50px; padding-bottom: 50px;">
+                    <div class="col-sm-12 col-md-6 col-lg-8">
+                        <h1 style="font-weight: 700;">Sign up for newsletter</h1>
+                        <h4>Get email update from our latest shop and special offer</h4>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 align-self-center">
+                        <form style="display: flex;">
+                            <input type="mail" placeholder="Enter email" size="30">
+                            <button type="submit" class="btn btn-secondary btn-lg">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <br><br><br>
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-2">
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-xs-4 col-md-4">
+                                <h4>Contact</h4>
+                                <p>Monday - Sunday
+                                <br><b>9:00 ~ 21:00</b>    
+                                <br>Hotline
+                                <br><b>1900 123 456</b>
+                                <br>Email
+                                <br><b>business@tasha.com</b>
+                                </p>
+                            </div>
+
+                            <div class="col-xs-4 col-md-4">
+                                <h4>About</h4>
+                                    <li><a href="historyOfTasha.html">The history of Tasha</a></li>
+                                    <li><a href="address.html">Address</a></li>
+                                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                                    <li><a href="paymentMethod.html">Payment Method</a></li>
+                                    <li><a href="shippingMethod.html">Shipping Method</a></li>
+                                    <li><a href="Feedback.html">Customer feedback</a></li>
+                                <br>
+                            </div>
+
+                            <div class="col-xs-4 col-md-4">
+                                <h4>More...</h4>
+                                    <li><a href="joinOurTeam.html">Join our team</a></li>
+                                    <li><a href="Blog.html">Blog</a></li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4 col-md-4">
                         <img src="assets/images/LOGO.png" width="70px">
                         <br><br>
                         <h4>Follow us at</h>
@@ -194,40 +245,7 @@
                         <a href=""><img src="assets/images/icon/instagram.png" class="icon"></a>
                         <a href=""><img src="assets/images/icon/twitter.png" class="icon"></a>
                         <a href=""><img src="assets/images/icon/whatsapp.png" class="icon"></a>
-                    </div>
-                    
-                    <div class="col-sm-12 col-md-2">
                         <br><br>
-                    </div>
-                    <div class="col-sm-12 col-md-2">
-
-                    </div>
-                    <div class="col-sm-4 col-md-2">
-                        <h4>Contact</h4>
-                        <p>Monday - Sunday
-                        <br><b>9:00 ~ 21:00</b>    
-                        <br>Hotline
-                        <br><b>1900 123 456</b>
-                        <br>Email
-                        <br><b>business@tasha.com</b>
-                        </p>
-                    </div>
-
-                    <div class="col-sm-4 col-md-2">
-                        <h4>About</h4>
-                            <li><a href="historyOfTasha.html">The history of Tasha</a></li>
-                            <li><a href="address.html">Address</a></li>
-                            <li><a href="privacyPolicy.html">Privacy Policy</a></li>
-                            <li><a href="paymentMethod.html">Payment Method</a></li>
-                            <li><a href="shippingMethod.html">Shipping Method</a></li>
-                            <li><a href="Feedback.html">Customer feedback</a></li>
-                        <br>
-                    </div>
-
-                    <div class="col-sm-4 col-md-2">
-                        <h4>More...</h4>
-                            <li><a href="joinOurTeam.html">Join our team</a></li>
-                            <li><a href="Blog.html">Blog</a></li>
                     </div>
                 </div>
 
@@ -236,18 +254,5 @@
             </div>
         </footer>
 
-
-    <script>
-        $('.carousel').carousel({
-            interval: 2000
-        })
-
-        $('#myCarousel').on('slid.bs.carousel', function (e) {
-  $('#myCarousel').carousel('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
-})
-
-$('#myCarousel').carousel('1') // Will start sliding to the slide 1 and returns to the caller
-$('#myCarousel').carousel('2')
-    </script>
     </body>
 </html>

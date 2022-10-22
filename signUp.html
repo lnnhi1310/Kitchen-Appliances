@@ -29,10 +29,26 @@
                 position: relative;
             }
 
-            input[type="text"]{
+            input[type="text"]
+            {
             width: 100%; 
             box-sizing: border-box; 
-            letter-spacing: 1px;}
+            letter-spacing: 1px;
+            }
+
+            input[type="password"]
+            {
+            width: 100%; 
+            box-sizing: border-box; 
+            letter-spacing: 1px;
+            }
+
+            input[type="mail"]
+            {
+            width: 100%; 
+            box-sizing: border-box; 
+            letter-spacing: 1px;
+            }
         
             .effect-2
                 {  
@@ -77,17 +93,24 @@
         <br><br><br><br><br>
         <div class="container d-flex justify-content-center">
             <form action="onSubmit()">
-                <h3 style="padding-top: 30px;">Log In</h3>
-                <br><p id="al">New account? <a href="signUp.html">Sign up here</a></p>
+                <h3 style="padding-top: 30px;">Sign up</h3>
+                <br><p id="al">Already have account? <a href="logIn.html">Log in here</a></p>
                 <div class="box">
-                    <input class="effect-2" type="text" placeholder="Email" name="Email">
+                    <input class="effect-2" type="text" placeholder="Name" name="name">
                     <span class="focus-border"></span>
                 </div>
                 <div class="box">
-                    <input class="effect-2" type="text" placeholder="Password" name="Password">
+                    <input class="effect-2" type="password" placeholder="Password" name="password">
                     <span class="focus-border"></span>
                 </div>
-                <p id="al"><input type="checkbox" value="false"> Remember your password</p>
+                <div class="box">
+                    <input class="effect-2" type="password" placeholder="Confirm password" name="cfpassword">
+                    <span class="focus-border"></span>
+                </div>
+                <div class="box">
+                    <input class="effect-2" type="mail" placeholder="Email" name="Email">
+                    <span class="focus-border"></span>
+                </div>
                 <div id="al">
                     <input type="button" value="Send"/>
                 </div>
