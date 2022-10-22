@@ -116,6 +116,11 @@ a:hover
 
 @media only screen and (max-width: 600px) 
 {
+    h4
+    {
+        font-size: x-small;
+    }
+
     #logo 
     {
         padding-left: 20px;
