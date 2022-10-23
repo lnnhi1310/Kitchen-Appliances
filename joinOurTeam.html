@@ -1,162 +1,272 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>gfg</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	    <title>TASHA</title>
+        <link rel="stylesheet" href="/assets/js/bootstrap.min.js">
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/js/bootstrap.bundle.min.js">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"> <!-- font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"/> <!-- icon -->
 	    <link rel="stylesheet" href="style.css">
-	<style type=text/css>
-		.leftdiv
-		{
-		float: left;
-        margin-left:50px;
-		}
-		.middlediv
-		{
-		float: left;
-		margin-left:200px;
-		}
-		.rightdiv
-		{
-		float: left;
-        margin-left:50px;
-		}
-		div{
-		padding : 1%;
-		width: 30%;
-		}
-        .blog{
-            color: rgb(255, 153, 0);
-            font-size: 70px;
-        }
-        .align{
-            text-align: center;
-            font-size: 17px;
-        }
-        .text{
-            color:rgb(94, 91, 91);
-            font-size:12px;
-        }
-        e{
-            margin-left:250px;
-        }
-	</style>
-</head>
-<body>
-    <nav>
-        <a href="index.html" id="logo"><img src="assets/images/LOGO.png" width="70px"></a>
-        <ul>
-            <li><a href="productlist.html"><img src="assets/images/nav/nav_0002_Layer-1.png"></a></li>
-            <li><a href="logIn.html"><img src="assets/images/nav/nav_0000_Layer-2.png"></a></li>
-            <li><a href=""><img src="assets/images/nav/nav_0001_Layer-3.png"></a></li>
-        </ul>
-    </nav>
+        <style>
+            #holder1, #holder2, #holder3, #holder4, #holder5, #holder6
+            {
+                background-color: whitesmoke;
+                padding: 30px;
+                margin: 10px;
+                display: none;
+            }
+        </style>
+    </head>
 
-    <br>
-    <p class="blog">Join our team page</p>
-    <h6 class="align">Tuyen Dung</h6>
-	<div class="leftdiv">
-		<a class="text">TIKTOK CONTENT CREATOR</a>
-        <e>&#10006;</e>
-        <br>
-        <div1></div1>
-        <br>
-        <hr>
-        <br>
-        <a class="text">TIKTOK VISUAL</a>
-        <e>	&#43;</e>
-        <br>
-        <br>
-        <hr>
-        <br>
-        <a class="text">GRAPHIC DESIGNER (Product)</a>
-        <e>	&#43;</e>
-        <br>
-        <br>
-        <hr>
-        <br>
-        <a class="text">GRAPHIC DESIGNER (Packaging)</a>
-        <e>	&#43;</e>
-        <br>
-        <hr>
-        <br>
+    <body>
+        <nav>
+            <a href="index.html" id="logo"><img src="assets/images/LOGO.png" width="70px"></a>
+            <ul>
+                <li><a href="productlist.html"><img src="assets/images/nav/nav_0002_Layer-1.png"></a></li>
+                <li><a href="logIn.html"><img src="assets/images/nav/nav_0000_Layer-2.png"></a></li>
+                <li><a href=""><img src="assets/images/nav/nav_0001_Layer-3.png"></a></li>
+            </ul>
+        </nav>
 
-
-
-	</div>
-	<e class="middlediv">
-        <hr width="2" size="700%">
-    </e>
-	<div class="rightdiv">
-		<h1>GeeksforGeeks</h1>
-		<p>How many times were you frustrated while looking out
-		for a good collection of programming/algorithm/interview
-		questions? What did you expect and what did you get?
-		This portal has been created to provide well written,
-		well thought and well-explained solutions for selected
-		questions.
-		</p>
-		<h2>GeeksforGeeks</h2>
-		<p>How many times were you frustrated while looking out
-		for a good collection of programming/algorithm/interview
-		questions? What did you expect and what did you get?
-		This portal has been created to provide well written,
-		well thought and well-explained solutions for selected
-		questions.	
-		</p>
-	</div>
-
-    <img src="assets/images/foot.gif" class="responsive">
-    <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-3">
-                    <img src="assets/images/LOGO.png" width="70px">
-                    <br><br>
-                    <h4>Follow us at</h>
-                    <br>
-                    <a href=""><img src="assets/images/icon/facebook.png" class="icon"></a>
-                    <a href=""><img src="assets/images/icon/instagram.png" class="icon"></a>
-                    <a href=""><img src="assets/images/icon/twitter.png" class="icon"></a>
-                    <a href=""><img src="assets/images/icon/whatsapp.png" class="icon"></a>
-                    <br><br>
-                </div>
+            <div class="row" style="padding-top: 100px;">
+                <h3 style="margin-bottom: 30px;">Join Our Team</h3>
+                <div class="col-sm-12 col-md-6">
+                    <button onclick="graphicDesign()" class="btn btn-secondary btn-lg">GRAPHIC DESIGNER</button>
+                    <div id="holder1">
+                        <div>
+                            <b>Job Description</b>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Sed velit justo, gravida eu laoreet quis, mollis vel mi.</li>
+                                <li>Mauris dictum nisl ac eros convallis, sit amet viverra nisl luctus.</li>
+                            </ul>
+                            <b>Requirement</b>       
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Sed velit justo, gravida eu laoreet quis, mollis vel mi.</li>
+                                <li>Mauris dictum nisl ac eros convallis, sit amet viverra nisl luctus.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
 
-                <div class="col-sm-12 col-md-3">
-                    <h4>Contact</h4>
-                    <p>Monday - Sunday
-                    <br><b>9:00 ~ 21:00</b>    
-                    <br>Hotline
-                    <br><b>1900 123 456</b>
-                    <br>Email
-                    <br><b>business@tasha.com</b>
-                    </p>
-                </div>
+                    <button onclick="humanResource()" class="btn btn-secondary btn-lg">HUMAN RESOURCE</button>
+                    <div id="holder2">
+                        <div>
+                            <b>Job Description</b>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Sed velit justo, gravida eu laoreet quis, mollis vel mi.</li>
+                                <li>Mauris dictum nisl ac eros convallis, sit amet viverra nisl luctus.</li>
+                            </ul>
+                            <b>Requirement</b>       
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Sed velit justo, gravida eu laoreet quis, mollis vel mi.</li>
+                                <li>Mauris dictum nisl ac eros convallis, sit amet viverra nisl luctus.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
 
-                <div class="col-sm-12 col-md-3">
-                    <h4>About</h4>
-                        <li><a href="historyOfTasha.html">The history of Tasha</a></li>
-                        <li><a href="address.html">Address</a></li>
-                        <li><a href="privacyPolicy.html">Privacy Policy</a></li>
-                        <li><a href="paymentMethod.html">Payment Method</a></li>
-                        <li><a href="shippingMethod.html">Shipping Method</a></li>
-                        <li><a href="Feedback.html">Customer feedback</a></li>
-                    <br>
+                    <button onclick="digitalMarketer()" class="btn btn-secondary btn-lg">DIGITAL MARKETER</button>
+                    <div id="holder4">
+                        <div>
+                            <b>Job Description</b>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Sed velit justo, gravida eu laoreet quis, mollis vel mi.</li>
+                                <li>Mauris dictum nisl ac eros convallis, sit amet viverra nisl luctus.</li>
+                            </ul>
+                            <b>Requirement</b>       
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Sed velit justo, gravida eu laoreet quis, mollis vel mi.</li>
+                                <li>Mauris dictum nisl ac eros convallis, sit amet viverra nisl luctus.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
                 </div>
+                <div class="col-sm-12 col-md-6" style="border-left: 2px solid silver;">
+                    <button onclick="customerService()" class="btn btn-secondary btn-lg">CUSTOMER SERVICE STAFF</button>
+                    <div id="holder3">
+                        <div>
+                            <b>Job Description</b>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Sed velit justo, gravida eu laoreet quis, mollis vel mi.</li>
+                                <li>Mauris dictum nisl ac eros convallis, sit amet viverra nisl luctus.</li>
+                            </ul>
+                            <b>Requirement</b>       
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Sed velit justo, gravida eu laoreet quis, mollis vel mi.</li>
+                                <li>Mauris dictum nisl ac eros convallis, sit amet viverra nisl luctus.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
 
-                <div class="col-sm-12 col-md-3">
-                    <h4>More...</h4>
-                        <li><a href="joinOurTeam.html">Join our team</a></li>
-                        <li><a href="Blog.html">Blog</a></li>
+                    <button onclick="warehouseStaff()" class="btn btn-secondary btn-lg">WAREHOUSE STAFF</button>
+                    <div id="holder5">
+                        <div>
+                            <b>Job Description</b>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Sed velit justo, gravida eu laoreet quis, mollis vel mi.</li>
+                                <li>Mauris dictum nisl ac eros convallis, sit amet viverra nisl luctus.</li>
+                            </ul>
+                            <b>Requirement</b>       
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Sed velit justo, gravida eu laoreet quis, mollis vel mi.</li>
+                                <li>Mauris dictum nisl ac eros convallis, sit amet viverra nisl luctus.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <button onclick="saleStaff()" class="btn btn-secondary btn-lg">SALE STAFF</button>
+                    <div id="holder6">
+                        <div>
+                            <b>Job Description</b>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Sed velit justo, gravida eu laoreet quis, mollis vel mi.</li>
+                                <li>Mauris dictum nisl ac eros convallis, sit amet viverra nisl luctus.</li>
+                            </ul>
+                            <b>Requirement</b>       
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Sed velit justo, gravida eu laoreet quis, mollis vel mi.</li>
+                                <li>Mauris dictum nisl ac eros convallis, sit amet viverra nisl luctus.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
                 </div>
+                </section>
             </div>
-
-            <br><br><p style="text-align: center; color: grey;">Copyright © Tasha home store. All rights reserved</p>
-
         </div>
-    </footer>
-</body>
+
+        <img src="assets/images/foot.gif" class="responsive">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3">
+                        <img src="assets/images/LOGO.png" width="70px">
+                        <br><br>
+                        <h4>Follow us at</h>
+                        <br>
+                        <a href=""><img src="assets/images/icon/facebook.png" class="icon"></a>
+                        <a href=""><img src="assets/images/icon/instagram.png" class="icon"></a>
+                        <a href=""><img src="assets/images/icon/twitter.png" class="icon"></a>
+                        <a href=""><img src="assets/images/icon/whatsapp.png" class="icon"></a>
+                        <br><br>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3">
+                        <h4>Contact</h4>
+                        <p>Monday - Sunday
+                        <br><b>9:00 ~ 21:00</b>    
+                        <br>Hotline
+                        <br><b>1900 123 456</b>
+                        <br>Email
+                        <br><b>business@tasha.com</b>
+                        </p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3">
+                        <h4>About</h4>
+                            <li><a href="historyOfTasha.html">The history of Tasha</a></li>
+                            <li><a href="address.html">Address</a></li>
+                            <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                            <li><a href="paymentMethod.html">Payment Method</a></li>
+                            <li><a href="shippingMethod.html">Shipping Method</a></li>
+                            <li><a href="Feedback.html">Customer feedback</a></li>
+                        <br>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3">
+                        <h4>More...</h4>
+                            <li><a href="joinOurTeam.html">Join our team</a></li>
+                            <li><a href="Blog.html">Blog</a></li>
+                    </div>
+                </div>
+
+                <br><br><p style="text-align: center; color: grey;">Copyright © Tasha home store. All rights reserved</p>
+
+            </div>
+        </footer>
+
+        <script>
+            function graphicDesign() {
+            var x = document.getElementById("holder1");
+            if (x.style.display === "none") 
+            {
+                x.style.display = "block";
+            } 
+            else {
+                x.style.display = "none";
+            }}
+
+            function humanResource() {
+            var x = document.getElementById("holder2");
+            if (x.style.display === "none") 
+            {
+                x.style.display = "block";
+            } 
+            else {
+                x.style.display = "none";
+            }}
+
+            function customerService() {
+            var x = document.getElementById("holder3");
+            if (x.style.display === "none") 
+            {
+                x.style.display = "block";
+            } 
+            else {
+                x.style.display = "none";
+            }}
+
+            function digitalMarketer() {
+            var x = document.getElementById("holder4");
+            if (x.style.display === "none") 
+            {
+                x.style.display = "block";
+            } 
+            else {
+                x.style.display = "none";
+            }}
+
+            function warehouseStaff() {
+            var x = document.getElementById("holder5");
+            if (x.style.display === "none") 
+            {
+                x.style.display = "block";
+            } 
+            else {
+                x.style.display = "none";
+            }}
+
+            function saleStaff() {
+            var x = document.getElementById("holder6");
+            if (x.style.display === "none") 
+            {
+                x.style.display = "block";
+            } 
+            else {
+                x.style.display = "none";
+            }}
+        </script>
+    </body>
 </html>
 
