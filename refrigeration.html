@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product list</title>
+    <title>Refrigeration</title>
     <script src="/assets/js/jquery-3.6.1.min.js"></script>
     <link rel="stylesheet" href="/assets/js/bootstrap.min.js">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
@@ -79,57 +79,20 @@ body{
                 
                 <!-- main -->
                 <div class="col-xs-12">
-                    <h4>Categories</h4> 
+                    <h4>Refrigeration</h4> 
                     <div id="myBtnContainer">
                         <button class="btn active col-xs-6" onclick="filterSelection('all')"> Show all</button>
-                        <button class="btn col-xs-6" onclick="filterSelection('cookingware')"> Cookingware</button>
-                        <button class="btn col-xs-6" onclick="filterSelection('refrigeration')"> Refrigeration</button>
-                        <button class="btn col-xs-6" onclick="filterSelection('appliances')"> Appliances</button>
-                        <button class="btn col-xs-6" onclick="filterSelection('foodstorage')"> Food Storage</button>
+                        <button class="btn col-xs-6" onclick="filterSelection('freezer')"> Freezers</button>
+                        <button class="btn col-xs-6" onclick="filterSelection('refrigeration')"> Refrigerator</button>
+                    
                     </div>
                 <div class="col-xs-12">  
                     <div class="show-list mt-3">
-                        <div class="row">
-                        <!--Cookingware  -->
-                            <div class="filterDiv cookingware col-xs-12 col-md-6 col-xl-3 mb-5 ">
-                                <div class="card border-0 hv-cus">
-                                    <a href="cookingware.html">
-                                        <div class="img-card">
-                                            <div id="carouselcookingpan1" class="carousel slide" data-bs-ride="carousel">
-                                                <div class="carousel-inner">
-                                                    <div class="carousel-item active">
-                                                        <img src="/assets/images/cookingpan1.jpg" class="d-block w-100" alt="..." href="cookingware.html">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="/assets/images/cookingpot1.webp" class="d-block w-100" alt="...">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="/assets/images/Egg Poachers 1.jpg" class="d-block w-100" alt="...">
-                                                    </div>
-                                                </div>
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselcookingpan1" data-bs-slide="prev">
-                                                    <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Previous</span>
-                                                </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselcookingpan1" data-bs-slide="next">
-                                                    <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Next</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    
-                                    <div class="titl-card text-center">
-                                        <h6 class="fw-light">Cookingware</h6>
-                                    </div>
-                                    
-                                </div>
-                            </div> 
-                        
-                        <!-- Refrigeration  -->
+                        <div class="row"> 
+                        <!-- Refrigeration 1  -->
                         <div class="filterDiv refrigeration col-xs-12 col-md-6 col-xl-3 mb-5">
                             <div class="card border-0 hv-cus">
-                                <a href="refrigeration.html">
+                                <a href="">
                                     <div class="img-card">
                                         <div id="carouselrefrigeration1" class="carousel slide" data-bs-ride="carousel">
                                             <div class="carousel-inner">
@@ -137,10 +100,10 @@ body{
                                                     <img src="/assets/images/refrigerator1.avif" class="d-block w-100" alt="...">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="/assets/images/refrigerator2.jpeg" class="d-block w-100" alt="...">
+                                                    <img src="/assets/images/refrigerator1.avif" class="d-block w-100" alt="...">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="/assets/images/Freezers1.webp" class="d-block w-100" alt="...">
+                                                    <img src="/assets/images/refrigerator1.avif" class="d-block w-100" alt="...">
                                                 </div>
                                             </div>
                                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselrefrigeration1" data-bs-slide="prev">
@@ -156,34 +119,35 @@ body{
                                 </a>
                                 
                                 <div class="titl-card text-center">
-                                    <h6 class="fw-light">Refrigerator</h6>
+                                    <h6 class="fw-light">Refrigerator 1</h6>
                                 </div>
-                            
+                                <div class="price text-center">
+                                    <span>$ 499.99</span>
+                                </div>
                             </div>
                         </div> 
-                        
-                        <!-- Appliances  -->
-                        <div class="filterDiv appliances col-xs-12 col-md-6 col-xl-3 mb-5">
+                        <!-- Refrigeration 2  -->
+                        <div class="filterDiv refrigeration col-xs-12 col-md-6 col-xl-3 mb-5">
                             <div class="card border-0 hv-cus">
-                                <a href="appliances.html">
+                                <a href="">
                                     <div class="img-card">
-                                        <div id="carouselblender1" class="carousel slide" data-bs-ride="carousel">
+                                        <div id="carouselrefrigeration2" class="carousel slide" data-bs-ride="carousel">
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="/assets/images/blender1.png" class="d-block w-100" alt="...">
+                                                    <img src="/assets/images/refrigerator2.jpeg" class="d-block w-100" alt="...">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="/assets/images/coffeemaker1.jpg" class="d-block w-100" alt="...">
+                                                    <img src="/assets/images/refrigerator2.jpeg" class="d-block w-100" alt="...">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="/assets/images/Electric Kettles1.webp" class="d-block w-100" alt="...">
+                                                    <img src="/assets/images/refrigerator2.jpeg" class="d-block w-100" alt="...">
                                                 </div>
                                             </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselblender1" data-bs-slide="prev">
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselrefrigeration2" data-bs-slide="prev">
                                                 <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
                                                 <span class="visually-hidden">Previous</span>
                                             </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselblender1" data-bs-slide="next">
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselrefrigeration2" data-bs-slide="next">
                                                 <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
                                                 <span class="visually-hidden">Next</span>
                                             </button>
@@ -192,33 +156,35 @@ body{
                                 </a>
                                 
                                 <div class="titl-card text-center">
-                                    <h6 class="fw-light">Appliances</h6>
+                                    <h6 class="fw-light">Refrigerator 2</h6>
                                 </div>
-                            
+                                <div class="price text-center">
+                                    <span>$ 469.99</span>
+                                </div>
                             </div>
                         </div> 
-                        <!-- Food storage  -->
-                        <div class="filterDiv foodstorage col-xs-12 col-md-6 col-xl-3 mb-5">
+                        <!-- Freezers 1  -->
+                        <div class="filterDiv freezer col-xs-12 col-md-6 col-xl-3 mb-5">
                             <div class="card border-0 hv-cus">
-                                <a href="foodstorage.html">
+                                <a href="">
                                     <div class="img-card">
-                                        <div id="carouselflask1" class="carousel slide" data-bs-ride="carousel">
+                                        <div id="carouselfreezer1" class="carousel slide" data-bs-ride="carousel">
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="/assets/images/flask.avif" class="d-block w-100" alt="...">
+                                                    <img src="/assets/images/Freezers1.webp" class="d-block w-100" alt="...">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="/assets/images/lunchbox.jpg" class="d-block w-100" alt="...">
+                                                    <img src="/assets/images/Freezers1.webp" class="d-block w-100" alt="...">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="/assets/images/storagebag1.webp" class="d-block w-100" alt="...">
+                                                    <img src="/assets/images/Freezers1.webp" class="d-block w-100" alt="...">
                                                 </div>
                                             </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselflask1" data-bs-slide="prev">
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselfreezer1" data-bs-slide="prev">
                                                 <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
                                                 <span class="visually-hidden">Previous</span>
                                             </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselflask1" data-bs-slide="next">
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselfreezer1" data-bs-slide="next">
                                                 <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
                                                 <span class="visually-hidden">Next</span>
                                             </button>
@@ -227,13 +193,51 @@ body{
                                 </a>
                                 
                                 <div class="titl-card text-center">
-                                    <h6 class="fw-light">Food storage</h6>
+                                    <h6 class="fw-light">Freezer 1</h6>
                                 </div>
-                                
+                                <div class="price text-center">
+                                    <span>$ 699.99</span>
+                                </div>
                             </div>
                         </div> 
-                        
-                        
+                        <!-- Freezers 2  -->
+                        <div class="filterDiv freezer col-xs-12 col-md-6 col-xl-3 mb-5">
+                            <div class="card border-0 hv-cus">
+                                <a href="">
+                                    <div class="img-card">
+                                        <div id="carouselfreezer2" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="/assets/images/Freezers2.webp" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="/assets/images/Freezers2.webp" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="/assets/images/Freezers2.webp" class="d-block w-100" alt="...">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselfreezer2" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselfreezer2" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                               
+                                <div class="titl-card text-center">
+                                    <h6 class="fw-light">Freezer 2</h6>
+                                </div>
+                                <div class="price text-center">
+                                    <span>$ 599.99</span>
+                                </div>
+                            </div>
+                        </div> 
+                       
                         <!--Add more product here-->
 
                         </div>
