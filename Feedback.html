@@ -11,6 +11,73 @@
         <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"> <!-- font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"/> <!-- icon -->
 	    <link rel="stylesheet" href="style.css">
+        <style>
+                        form
+            {
+                border: 2px solid black;
+                width: 700px;
+            }
+
+            :focus{outline: none;}
+
+            .box
+            {
+                float: center;
+                padding-left: 40px;  
+                padding-right: 40px; 
+                margin: 20px 3%;
+                position: relative;
+            }
+
+            input[type="text"]
+            {
+            width: 100%; 
+            box-sizing: border-box; 
+            letter-spacing: 1px;
+            }
+
+            input[type="tel"]
+            {
+            width: 100%; 
+            box-sizing: border-box; 
+            letter-spacing: 1px;
+            }
+
+            input[type="mail"]
+            {
+            width: 100%; 
+            box-sizing: border-box; 
+            letter-spacing: 1px;
+            }
+        
+            .effect-2
+                {  
+                    border: 0; 
+                    padding: 7px 0; 
+                    border-bottom: 1px solid #ccc;
+                }
+
+            .effect-2 ~ .focus-border{position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background-color: #3399FF; transition: 0.4s;}
+            .effect-2:focus ~ .focus-border{width: 90%; transition: 0.4s; left: 5%;}
+
+            #al
+            {
+                padding-left: 9%;
+            }
+
+            @media only screen and (max-width: 600px) 
+            {
+                form 
+                {
+                width: 350px;
+                }
+
+                #al
+                {
+                padding-left: 10%;
+                }
+            }
+        </style>
     </head>
 
     <body>
@@ -22,6 +89,43 @@
                 <li><a href="cartList.html"><img src="assets/images/nav/nav_0001_Layer-3.png"></a></li>
             </ul>
         </nav>
+
+        <div class="container d-flex justify-content-center" style="padding-top: 100px;">
+            <div class="row">
+                <div class="col-sm-12 col-md-5">
+                    <img src="assets/images/others/6.jpg" class="responsive">
+                </div>
+                <div class="col-sm-12 col-md-7">
+                <form action="onSubmit()">
+                    <h3 style="padding-top: 30px;">Customer Feedback</h3>
+                    <div class="box">
+                        <input class="effect-2" type="text" placeholder="Name" name="name">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="box">
+                        <input class="effect-2" type="tel" placeholder="Phone number" name="phone">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="box">
+                        <input class="effect-2" type="mail" placeholder="Email" name="Email">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="box">
+                        <input class="effect-2" type="text" placeholder="Address" name="address">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="box">
+                        <p style="color: gray;">Feedback</p>
+                        <textarea rows="5" cols="55"></textarea>
+                    </div>
+                    <div id="al">
+                        <input type="button" value="Send"/>
+                    </div>
+                    <br><br>
+                </form>
+                </div>
+            </div>
+        </div>
 
         <img src="assets/images/foot.gif" class="responsive">
         <footer>
