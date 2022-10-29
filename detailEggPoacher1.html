@@ -12,78 +12,36 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"/> <!-- icon -->
 	    <link rel="stylesheet" href="style.css">
         <style>
-                        form
+            .container
             {
-                border: 2px solid black;
-                width: 700px;
+                padding-top: 150px;
+                padding-bottom: 100px;
             }
 
-            :focus{outline: none;}
-
-            .box
+            h2
             {
-                float: center;
-                padding-left: 40px;  
-                padding-right: 40px; 
-                margin: 20px 3%;
-                position: relative;
+                font-weight: 600;
             }
 
-            input[type="text"]
+            h1
             {
-            width: 100%; 
-            box-sizing: border-box; 
-            letter-spacing: 1px;
+                font-weight: 600;
             }
 
-            input[type="tel"]
+            h4
             {
-            width: 100%; 
-            box-sizing: border-box; 
-            letter-spacing: 1px;
+                font-weight: 400;
             }
 
-            input[type="mail"]
+            #quantity
             {
-            width: 100%; 
-            box-sizing: border-box; 
-            letter-spacing: 1px;
-            }
-        
-            .effect-2
-                {  
-                    border: 0; 
-                    padding: 7px 0; 
-                    border-bottom: 1px solid #ccc;
-                }
-
-            .effect-2 ~ .focus-border{position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background-color: #3399FF; transition: 0.4s;}
-            .effect-2:focus ~ .focus-border{width: 90%; transition: 0.4s; left: 5%;}
-
-            #al
-            {
-                padding-left: 9%;
+                width: 50px;
             }
 
-            textarea {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-    width: 100%;
-}
-
-            @media only screen and (max-width: 600px) 
+            select
             {
-                form 
-                {
-                width: 350px;
-                }
-
-                #al
-                {
-                padding-left: 10%;
-                }
+                margin-top: 20px;
+                margin-bottom: 20px;
             }
         </style>
     </head>
@@ -98,41 +56,43 @@
             </ul>
         </nav>
 
-        <div class="container d-flex justify-content-center" style="padding-top: 100px;">
-            <div class="row">
-                <div class="col-sm-12 col-md-5">
-                    <img src="assets/images/others/6.jpg" class="responsive">
+        <div class="container">
+            <section id="detail">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-5">
+                        <img src="assets/images/Egg Poachers 1.jpg" class="responsive" id="mainImage">
+                        <div class="row" style="padding-top: 5px;">
+                            <div class="col-sm-4 col-md-4">
+                                <img src="assets/images/Egg Poachers 1.jpg" class="responsive" id="mainImage">
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <img src="assets/images/Egg Poachers 1.jpg" class="responsive" id="mainImage">
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <img src="assets/images/Egg Poachers 1.jpg" class="responsive" id="mainImage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-7" style="text-align: left;">
+                        <h2>Egg Poarcher 1</h2>
+                        <br>
+                        <h1>$450</h1>
+                        <form>
+                        <select id="cookingPan1">
+                            <option value="opt">Select color</option>
+                            <option value="orangePan1">Silver</option>
+                            <option value="grayPan1">Black</option>
+                        </select>
+                        <br>Quantity: <input type="number" id="quantity" value="1" min="1" max="100" size="1">
+                        <button type="button" class="btn btn-info">Add to cart</button>
+                        </form>
+                        <br>
+                        <h4>Product detail</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam risus nunc, lobortis vel accumsan nec, iaculis eu leo. Sed facilisis tellus sed eros pulvinar facilisis. Curabitur venenatis eu massa eget lobortis. In dignissim nibh non augue viverra semper. Phasellus non nunc ultrices sem molestie luctus. Maecenas a faucibus magna. Proin in aliquam ipsum, non ornare lectus. Integer sit amet diam et ipsum ullamcorper blandit vitae at libero. Aenean sed nibh at augue gravida venenatis. Morbi felis est, interdum sit amet dui quis, auctor auctor tellus. Donec facilisis varius enim.</p>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-7">
-                <form action="onSubmit()">
-                    <h3 style="padding-top: 30px;">Customer Feedback</h3>
-                    <div class="box">
-                        <input class="effect-2" type="text" placeholder="Name" name="name">
-                        <span class="focus-border"></span>
-                    </div>
-                    <div class="box">
-                        <input class="effect-2" type="tel" placeholder="Phone number" name="phone">
-                        <span class="focus-border"></span>
-                    </div>
-                    <div class="box">
-                        <input class="effect-2" type="mail" placeholder="Email" name="Email">
-                        <span class="focus-border"></span>
-                    </div>
-                    <div class="box">
-                        <input class="effect-2" type="text" placeholder="Address" name="address">
-                        <span class="focus-border"></span>
-                    </div>
-                    <div class="box">
-                        <p style="color: gray;">Feedback</p>
-                        <textarea rows="5"></textarea>
-                    </div>
-                    <div id="al">
-                        <input type="button" value="Send"/>
-                    </div>
-                    <br><br>
-                </form>
-                </div>
-            </div>
+            </section>
+
         </div>
 
         <img src="assets/images/foot.gif" class="responsive">
