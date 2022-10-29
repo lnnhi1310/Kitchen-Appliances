@@ -78,8 +78,16 @@
             <div class="row">
                 
                 <!-- main -->
+            <div class="col-xs-12">
                 <div class="col-xs-12">
-                    <h4>Cookware</h4> 
+                    <h4>Cookwares</h4> 
+                    <div>
+                        <a href="productlist.html" class="btn">Show all</a>
+                        <button class="btn btn-secondary disabled col-xs-6" >Cookware</button>
+                        <a href="refrigeration.html" class="btn" >Refrigeration</a>
+                        <a href="appliances.html" class="btn" >Appliances</a>
+                        <a href="foodstorage.html" class="btn" >Food Storage</a>
+                    </div>
                     <div id="myBtnContainer">
                         <button class="btn active col-xs-6" onclick="filterSelection('all')"> Show all</button>
                         <button class="btn col-xs-6" onclick="filterSelection('cookingpot')"> Cooking pots</button>
@@ -88,6 +96,7 @@
                         <button class="btn col-xs-6" onclick="filterSelection('steamer')"> Steamers</button>
                         <button class="btn col-xs-6" onclick="filterSelection('cookingset')"> Cookware set</button>
                     </div>
+                </div>
                 <div class="col-xs-12">  
                     <div class="show-list mt-3">
                         <div class="row">
@@ -639,6 +648,7 @@
         this.className += " active";
       });
     }
+    
     </script>
 </body>
 </html>
