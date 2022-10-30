@@ -51,6 +51,51 @@
             {
                 width: 100%; 
                 transition: 0.4s;}
+
+
+                form
+            {
+                border: 2px solid black;
+                width: 700px;
+            }
+
+            input[type="email"]
+            {
+                color: #333; 
+                width: 100%; 
+                box-sizing: border-box; 
+                letter-spacing: 1px;}
+
+                input[type="tel"]
+            {
+                color: #333; 
+                width: 100%; 
+                box-sizing: border-box; 
+                letter-spacing: 1px;}
+
+            .box
+            {
+                float: center;
+                padding-left: 40px;  
+                padding-right: 40px; 
+                margin: 20px 3%;
+                position: relative;
+            }
+        
+            .effect-2
+                {  
+                    border: 0; 
+                    padding: 7px 0; 
+                    border-bottom: 1px solid #ccc;
+                }
+
+            .effect-2 ~ .focus-border{position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background-color: silver; transition: 0.4s;}
+            .effect-2:focus ~ .focus-border{width: 85%; transition: 0.4s; left: 8%;}
+
+            #al
+            {
+                padding-left: 9%;
+            }
         </style>
     </head>
 
@@ -60,53 +105,85 @@
             <ul>
                 <li><a href=""><img src="assets/images/nav/nav_0002_Layer-1.png"></a></li>
                 <li><a href="logIn.html"><img src="assets/images/nav/nav_0000_Layer-2.png"></a></li>
+                <li><a href="address.html"><img src="assets/images/nav/nav_0002_Layer-1 copy.png"></a></li>
                 <li><a href=""><img src="assets/images/nav/nav_0001_Layer-3.png"></a></li>
             </ul>
         </nav>
        
-        <div class="container" >
+        <div class="container">
             <div class="row" style="padding-top: 100px;">
-                <h3>Cart</h3>
-                <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Price</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th>1</th>
-                        <td>Cooking pan example</td>
-                        <td>1</td>
-                        <td>$50</td>
-                      </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr style="height: 60px;">
-                            <th scope="row" colspan="3">Coupon</th>
-                            <td>
-                                <div class="col-3">
-                                <input class="effect-1" type="text" placeholder="Coupon">
-                                <span class="focus-border"></span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr style="height: 60px;">
-                            <th scope="row" colspan="3">Discount</th>
-                            <td>-$$$</td>
-                        </tr>
-                        <tr style="height: 60px;">
-                            <th scope="row" colspan="3">Total</th>
-                            <td>$$$</td>
-                        </tr>
-                    </tfoot>
-                </table>
+                <div class="col-sm-12 col-md-5" style="padding-bottom: 70px;">
+                    <h3>Shipping information</h3>
+                    <div class="box">
+                        <input class="effect-2" type="text" placeholder="Name" name="name">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="box">
+                        <input class="effect-2" type="email" placeholder="Email" name="email">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="box">
+                        <input class="effect-2" type="tel" placeholder="Tel" name="tel">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="box">
+                        <input class="effect-2" type="text" placeholder="Address" name="address">
+                        <span class="focus-border"></span>
+                    </div>
+                </div>
 
-                <input type="button" value="CASH">
+                <div class="col-sm-12 col-md-7" style="border-left: 2PX solid silver;">
+                    <h3>Cart</h3>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>Cooking pan example</td>
+                            <td><input type="number" value="1" min="1" max="100" size="1"></td>
+                            <td>$50</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>Cooking pot example</td>
+                            <td><input type="number" value="1" min="1" max="100" size="1"></td>
+                            <td>$50</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr style="height: 60px;">
+                                <th scope="row" colspan="3">Coupon</th>
+                                <td>
+                                    <div class="col-3">
+                                    <input class="effect-1" type="text" placeholder="Coupon">
+                                    <span class="focus-border"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="height: 60px;">
+                                <th scope="row" colspan="3">Discount</th>
+                                <td>-$$$</td>
+                            </tr>
+                            <tr style="height: 60px;">
+                                <th scope="row" colspan="3">Total</th>
+                                <td>$$$</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
             </div>
+
+            <div style="float: right;">
+            <input type="button" value="CHECK OUT">
+            </div>
+
         </div>
 
         <img src="assets/images/foot.gif" class="responsive">

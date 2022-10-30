@@ -38,7 +38,7 @@ nav ul li a
 
 nav ul li a img
 {
-    width: 50px;
+    width: 45px;
 }
 
 h3
@@ -79,6 +79,11 @@ a:hover
     padding-left: 100px;
 }
 
+#logoimg
+{
+    width: 70px;
+}
+
 .responsive {
     max-width: 100%;
     height: auto;
@@ -113,12 +118,29 @@ a:hover
         text-decoration: none;
     }
 
+@media only screen and (max-width: 800px)
+{
+    nav ul li a img
+    {
+        width: 40px;
+    }
+
+    #logoimg
+    {
+        width: 60px;
+    }
+} 
 
 @media only screen and (max-width: 600px) 
 {
+    #logoimg
+    {
+        width: 55px;
+    }
+
     h4
     {
-        font-size: x-small;
+        font-size: 18px;
     }
 
     #logo 
@@ -128,12 +150,12 @@ a:hover
 
     nav ul li a img
     {
-        width: 40px;
+        width: 35px;
     }
 
     nav ul
     {
-        padding-right: 20px;
+        padding-right: 15px;
     }
 
     nav ul li

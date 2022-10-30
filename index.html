@@ -6,7 +6,8 @@
 	    <title>TASHA</title>
         <link rel="stylesheet" href="/assets/js/bootstrap.min.js">
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/assets/js/bootstrap.bundle.min.js">
+        <script src="/assets/js/bootstrap.bundle.min.js"></script>    
+        <link rel="stylesheet" href="/assets/js/jquery-3.6.1.min.js">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"> <!-- font -->
@@ -92,10 +93,11 @@
 
     <body>
         <nav>
-            <a href="index.html" id="logo"><img src="assets/images/LOGO.png" width="70px"></a>
+            <a href="index.html" id="logo"><img src="assets/images/LOGO.png" id="logoimg"></a>
             <ul>
                 <li><a href="productlist.html"><img src="assets/images/nav/nav_0002_Layer-1.png"></a></li>
                 <li><a href="logIn.html"><img src="assets/images/nav/nav_0000_Layer-2.png"></a></li>
+                <li><a href="address.html"><img src="assets/images/nav/nav_0002_Layer-1 copy.png"></a></li>
                 <li><a href="cartList.html"><img src="assets/images/nav/nav_0001_Layer-3.png"></a></li>
             </ul>
         </nav>
@@ -109,24 +111,35 @@
         <div class="container">
             <div class="row">
                 <h3>Feature collections</h3>
-                <div class="col-sm-12 col-md-7">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                          </ol>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                              <img src="assets/images/banner/banner 1.png" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="assets/images/banner/banner 2.gif" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="assets/images/banner 1.png" class="d-block w-100" alt="...">
-                          </div>
+                <div class="col-sm-12 col-md-7" style="padding-bottom: 10px;">
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                         </div>
+                        
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/banner/banner 1.png" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/banner/banner 2.gif" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/banner/banner 3.png" class="d-block" style="width:100%">
+                        </div>
+                        </div>
+                        
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        </button>
                     </div>
                 </div>
 
@@ -188,31 +201,31 @@
                             <h4>Cooking pan 1</h4>
                             <h5>$50</h5>
                         </div>
-                        <a href="#"><span class="material-symbols-outlined">weight</span></a>
+                        <a href="cartList.html"><span class="material-symbols-outlined">weight</span></a>
                         <br>
                     </div>
                     </section>
                     
                     <section id="product1">
-                        <div class="pro" onclick="window.location.href='detailRefridgerator2.html';">
-                            <img src="assets/images/refrigerator2.jpeg" alt="" class="responsive">
+                        <div class="pro" onclick="window.location.href='detailCookingPot1.html';">
+                            <img src="assets/images/cookingpot1.webp" alt="" class="responsive">
                             <div class="des">
-                                <h4>Refrigerator 2</h4>
+                                <h4>Cooking Pot 1</h4>
                                 <h5>$450</h5>
                             </div>
-                            <a href="#"><span class="material-symbols-outlined">weight</span></a>
+                            <a href="cartList.html"><span class="material-symbols-outlined">weight</span></a>
                             <br>
                         </div>
                     </section>
 
                     <section id="product1">
-                        <div class="pro" onclick="window.location.href='detailRefridgerator2.html';">
-                            <img src="assets/images/refrigerator2.jpeg" alt="" class="responsive">
+                        <div class="pro" onclick="window.location.href='detailSteamer1.html';">
+                            <img src="assets/images/Steamers1.jpg" alt="" class="responsive">
                             <div class="des">
-                                <h4>Refrigerator 2</h4>
+                                <h4>Steamer 1</h4>
                                 <h5>$450</h5>
                             </div>
-                            <a href="#"><span class="material-symbols-outlined">weight</span></a>
+                            <a href="cartList.html"><span class="material-symbols-outlined">weight</span></a>
                             <br>
                         </div>
                     </section>
@@ -228,31 +241,31 @@
                                 <h4>Cooking pan 3</h4>
                                 <h5>$50</h5>
                             </div>
-                            <a href="#"><span class="material-symbols-outlined">weight</span></a>
+                            <a href="cartList.html"><span class="material-symbols-outlined">weight</span></a>
                             <br>
                         </div>
                     </section>
 
                     <section id="product1">
-                        <div class="pro" onclick="window.location.href='detailRefridgerator2.html';">
-                            <img src="assets/images/refrigerator2.jpeg" alt="" class="responsive">
+                        <div class="pro" onclick="window.location.href='detailFreezer2.html';">
+                            <img src="assets/images/Freezers2.webp" alt="" class="responsive">
                             <div class="des">
-                                <h4>Refrigerator 2</h4>
+                                <h4>Freezer 2</h4>
                                 <h5>$450</h5>
                             </div>
-                            <a href="#"><span class="material-symbols-outlined">weight</span></a>
+                            <a href="cartList.html"><span class="material-symbols-outlined">weight</span></a>
                             <br>
                         </div>
                     </section>
 
                     <section id="product1">
-                        <div class="pro" onclick="window.location.href='detailRefridgerator2.html';">
-                            <img src="assets/images/refrigerator2.jpeg" alt="" class="responsive">
+                        <div class="pro" onclick="window.location.href='detailStorageBag.html';">
+                            <img src="assets/images/storagebag1.webp" alt="" class="responsive">
                             <div class="des">
-                                <h4>Refrigerator 2</h4>
+                                <h4>Storage Bag</h4>
                                 <h5>$450</h5>
                             </div>
-                            <a href="#"><span class="material-symbols-outlined">weight</span></a>
+                            <a href="cartList.html"><span class="material-symbols-outlined">weight</span></a>
                             <br>
                         </div>
                     </section>
@@ -269,31 +282,31 @@
                                 <h4>Cooking pan 7</h4>
                                 <h5>$50</h5>
                             </div>
-                            <a href="#"><span class="material-symbols-outlined">weight</span></a>
+                            <a href="cartList.html"><span class="material-symbols-outlined">weight</span></a>
                             <br>
                         </div>
                     </section>
 
                     <section id="product1">
-                        <div class="pro" onclick="window.location.href='detailRefridgerator2.html';">
-                            <img src="assets/images/refrigerator2.jpeg" alt="" class="responsive">
+                        <div class="pro" onclick="window.location.href='detailFlask.html';">
+                            <img src="assets/images/flask.avif" alt="" class="responsive">
                             <div class="des">
-                                <h4>Refrigerator 2</h4>
+                                <h4>Flask</h4>
                                 <h5>$450</h5>
                             </div>
-                            <a href="#"><span class="material-symbols-outlined">weight</span></a>
+                            <a href="cartList.html"><span class="material-symbols-outlined">weight</span></a>
                             <br>
                         </div>
                     </section>
 
                     <section id="product1">
-                        <div class="pro" onclick="window.location.href='detailRefridgerator2.html';">
-                            <img src="assets/images/refrigerator2.jpeg" alt="" class="responsive">
+                        <div class="pro" onclick="window.location.href='detailEggPoarcher2.html';">
+                            <img src="assets/images/Egg Poachers 2.jpg" alt="" class="responsive">
                             <div class="des">
-                                <h4>Refrigerator 2</h4>
+                                <h4>Egg Poarcher 2</h4>
                                 <h5>$450</h5>
                             </div>
-                            <a href="#"><span class="material-symbols-outlined">weight</span></a>
+                            <a href="cartList.html"><span class="material-symbols-outlined">weight</span></a>
                             <br>
                         </div>
                     </section>
@@ -302,25 +315,25 @@
                 <div class="col-sm-6 col-lg-3" style="padding-top: 10px;">
 
                     <section id="product1">
-                        <div class="pro" onclick="window.location.href='detailRefridgerator2.html';">
-                            <img src="assets/images/refrigerator2.jpeg" alt="" class="responsive">
+                        <div class="pro" onclick="window.location.href='detailCookingSet3.html';">
+                            <img src="assets/images/cookingset3.jpg" alt="" class="responsive">
                             <div class="des">
-                                <h4>Refrigerator 2</h4>
+                                <h4>Cooking Set 3</h4>
                                 <h5>$450</h5>
                             </div>
-                            <a href="#"><span class="material-symbols-outlined">weight</span></a>
+                            <a href="cartList.html"><span class="material-symbols-outlined">weight</span></a>
                             <br>
                         </div>
                     </section>
 
                     <section id="product1">
-                        <div class="pro" onclick="window.location.href='detailRefridgerator2.html';">
-                            <img src="assets/images/refrigerator2.jpeg" alt="" class="responsive">
+                        <div class="pro" onclick="window.location.href='detailToaster1.html';">
+                            <img src="assets/images/toaster1.jpg" alt="" class="responsive">
                             <div class="des">
-                                <h4>Refrigerator 2</h4>
+                                <h4>Toaster 1</h4>
                                 <h5>$450</h5>
                             </div>
-                            <a href="#"><span class="material-symbols-outlined">weight</span></a>
+                            <a href="cartList.html"><span class="material-symbols-outlined">weight</span></a>
                             <br>
                         </div>
                     </section>
