@@ -12,26 +12,36 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"/> <!-- icon -->
 	    <link rel="stylesheet" href="style.css">
         <style>
+            .container
+            {
+                padding-top: 150px;
+                padding-bottom: 100px;
+            }
+
             h2
             {
                 font-weight: 600;
-                color: #8C5845;
             }
 
-            .info
+            h1
             {
-                margin: 20px;
+                font-weight: 600;
             }
 
-            .info h3
+            h4
             {
-                font-size: 20px;
+                font-weight: 400;
             }
 
-            .info p
+            #quantity
             {
-                font-size: 14px;
-                text-align: center;
+                width: 50px;
+            }
+
+            select
+            {
+                margin-top: 20px;
+                margin-bottom: 20px;
             }
         </style>
     </head>
@@ -48,67 +58,47 @@
         </nav>
 
         <div class="container">
-            <div class="row" style="padding-top: 100px;">
-                <div class="col-sm-12 col-md-5">
-                    <img src="assets/images/others/1.jpg" class="responsive">
-                </div>
-                <div class="col-sm-12 col-md-7" style="border-left: 4px solid grey;">
-                    <div style="padding: 30px;">
-                    <h2>Did you know?</h2>
-                    <br>
-                    <p style="text-align: justify;">TASHA was founded by GROUP 1 in 2022 and came to life as a mail order catalogue business in the forested town of Ho Chi Minh city, VietNam. Today, it’s a global 
-                        home furnishing brand that brings affordability, design and comfort to people all over the world. We may have come a long way since our humble beginnings, 
-                        but our vision remains the same: to create a better everyday life for the many people. Explore the TASHA story here, to learn more about our heritage, what 
-                        drives us today and the ways we seek to positively impact people and planet. It provides a collection of n number of appliances with different
-                        categories to match the fast life of the generation. The Tasha group of companies had made huge profits in the year 2013. In order to enhance its
-                        business the organization wants you to develop the website.</p>
+            <section id="detail">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-5">
+                        <img src="assets/images/knife2.jpg" class="responsive" id="mainImage">
+                        <div class="row" style="padding-top: 5px;">
+                            <div class="col-sm-4 col-md-4">
+                                <img src="assets/images/knife2.jpg" class="responsive" id="mainImage">
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <img src="assets/images/knife2.jpg" class="responsive" id="mainImage">
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <img src="assets/images/knife2.jpg" class="responsive" id="mainImage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-7" style="text-align: left;">
+                        <div style="padding-bottom: 20px;">
+                            <a href="index.html" style="text-decoration: none;">Home </a>/
+                            <a href="productlist.html" style="text-decoration: none;">Shop </a>/
+                            <a href="foodstorage.html" style="text-decoration: none;">Food Storage</a>
+                        </div>
+                        <h2>Cutting Knife 1</h2>
+                        <br>
+                        <h1>$450</h1>
+                        <form>
+                        <select id="cookingPan1">
+                            <option value="opt">Select color</option>
+                            <option value="orangePan1">Silver</option>
+                            <option value="grayPan1">Black</option>
+                        </select>
+                        <br>Quantity: <input type="number" id="quantity" value="1" min="1" max="100" size="1">
+                        <button type="button" class="btn btn-info">Add to cart</button>
+                        </form>
+                        <br>
+                        <h4>Product detail</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam risus nunc, lobortis vel accumsan nec, iaculis eu leo. Sed facilisis tellus sed eros pulvinar facilisis. Curabitur venenatis eu massa eget lobortis. In dignissim nibh non augue viverra semper. Phasellus non nunc ultrices sem molestie luctus. Maecenas a faucibus magna. Proin in aliquam ipsum, non ornare lectus. Integer sit amet diam et ipsum ullamcorper blandit vitae at libero. Aenean sed nibh at augue gravida venenatis. Morbi felis est, interdum sit amet dui quis, auctor auctor tellus. Donec facilisis varius enim.</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="row" style="padding: 60px; background-color: gray;">
-                <div class="col-4">
-                    <img src="assets/images/others/2.jpg" class="responsive">
-                </div>
-                <div class="col-4">
-                    <img src="assets/images/others/3.jpg" class="responsive">
-                </div>
-                <div class="col-4">
-                    <img src="assets/images/others/4.jpg" class="responsive">
-                </div>
-            </div>
-
-            <div class="row" style="padding-top: 60px;">
-                <h2 style="text-align: center;">Meet us</h2>
-                <div class="col-sm-12 col-md-3" style="padding: 30px;">
-                    <img src="assets/images/meetus/Nhi.jpg" class="responsive">
-                    <div class="info">
-                        <h3>LY NGOC NHI</h3>
-                        <p>CEO - FOUNDER of TASHA</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-3" style="padding: 30px;">
-                    <img src="assets/images/meetus/Quang.jpg" class="responsive">
-                    <div class="info">
-                        <h3>BUI MINH QUANG</h3>
-                        <p>FOUNDER of TASHA</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-3" style="padding: 30px;">
-                    <img src="assets/images/meetus/Phu.jpg" class="responsive">
-                    <div class="info">
-                        <h3>LY PHU</h3>
-                        <p>FOUNDER of TASHA</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-3" style="padding: 30px;">
-                    <img src="assets/images/meetus/Quy.jpg" class="responsive">
-                    <div class="info">
-                        <h3>LY QUY</h3>
-                        <p>FOUNDER of TASHA</p>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <img src="assets/images/foot.gif" class="responsive">

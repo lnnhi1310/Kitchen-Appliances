@@ -18,7 +18,6 @@
                 background-color: whitesmoke;
                 padding: 30px;
                 margin: 10px;
-                display: none;
             }
         </style>
     </head>
@@ -36,6 +35,7 @@
 
         <div class="container">
             <div class="row" style="padding-top: 100px;">
+                <div style="padding-bottom: 40px;"><img src="assets/images/banner/banner 8.png" class="responsive"></div>
                 <h3 style="margin-bottom: 30px;">Join Our Team</h3>
                 <div class="col-sm-12 col-md-6">
                     <button onclick="graphicDesign()" class="btn btn-secondary btn-lg">GRAPHIC DESIGNER</button>
@@ -210,9 +210,10 @@
         <script>
             function graphicDesign() {
             var x = document.getElementById("holder1");
-            if (x.style.display === "none") 
+            if (x.style.display == "none") 
             {
                 x.style.display = "block";
+                console.log('Open');
             } 
             else {
                 x.style.display = "none";
@@ -220,7 +221,7 @@
 
             function humanResource() {
             var x = document.getElementById("holder2");
-            if (x.style.display === "none") 
+            if (x.style.display == "none") 
             {
                 x.style.display = "block";
             } 
@@ -230,7 +231,7 @@
 
             function customerService() {
             var x = document.getElementById("holder3");
-            if (x.style.display === "none") 
+            if (x.style.display == "none") 
             {
                 x.style.display = "block";
             } 
@@ -240,7 +241,7 @@
 
             function digitalMarketer() {
             var x = document.getElementById("holder4");
-            if (x.style.display === "none") 
+            if (x.style.display == "none") 
             {
                 x.style.display = "block";
             } 
@@ -250,7 +251,7 @@
 
             function warehouseStaff() {
             var x = document.getElementById("holder5");
-            if (x.style.display === "none") 
+            if (x.style.display == "none") 
             {
                 x.style.display = "block";
             } 
@@ -260,7 +261,7 @@
 
             function saleStaff() {
             var x = document.getElementById("holder6");
-            if (x.style.display === "none") 
+            if (x.style.display == "none") 
             {
                 x.style.display = "block";
             } 
