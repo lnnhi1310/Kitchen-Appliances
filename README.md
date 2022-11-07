@@ -8,10 +8,10 @@ Project title: Kitchen Appliances
 
 3 collaborators:
 
-  Student1397174  Lý Ngọc Nhi
-  Student1396931  Lý Phú 
-  Student1396934  Lý Quý
-  Student1396507  Bùi Minh Quang
+    Student1397174  Lý Ngọc Nhi
+    Student1396931  Lý Phú
+    Student1396934  Lý Quý
+    Student1396507  Bùi Minh Quang
   
 ============================
 
